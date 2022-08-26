@@ -8,7 +8,6 @@ export class CreateLessonInput {
   @Field()
   name: string;
 
-
   @IsDateString()
   @Field()
   startDate: string;
