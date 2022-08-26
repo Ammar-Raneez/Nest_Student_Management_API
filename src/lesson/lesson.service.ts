@@ -27,4 +27,8 @@ export class LessonService {
   async getLesson(id): Promise<Lesson> {
     return this.lessonRepository.findOne({ where: { id } });
   }
+
+  async getLessons(): Promise<Lesson[]> {
+    return this.lessonRepository.find();
+  }
 }
